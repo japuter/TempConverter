@@ -28,7 +28,8 @@ jobs:
         run: mvn test jacoco:report
 
       - name: Upload code coverage report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3  # Update to the latest version
         with:
           name: jacoco-report
           path: target/site/jacoco
+
